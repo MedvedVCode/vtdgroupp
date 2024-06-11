@@ -1,0 +1,56 @@
+.header {
+	&_block {
+		display: grid;
+		grid-template-columns: 2fr 5fr 3fr;
+		padding: 10px 0;
+	}
+	&_mail {
+		text-align: end;
+		display: flex;
+		flex-direction: column;
+		padding-right: $leftStepFromEnd;
+	}
+}
+
+.title {
+	padding: 10px 0;
+	display: grid;
+	grid-template-columns: 2fr 3fr 5fr;
+	background-color: $backgroundTitleColor;
+	align-items: center;
+	color: #fff;
+
+	&_logo {
+		font-size: 2.5rem;
+		font-weight: normal;
+		white-space: nowrap;
+	}
+
+	&_subtitle {
+		text-transform: uppercase;
+		font-size: 1.2rem;
+		text-align: end;
+		padding-right: $leftStepFromEnd;
+	}
+}
+
+.contacts {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	padding: 10px 0;
+
+	&_block {
+		display: flex;
+		justify-content: space-between;
+		gap: 10px;
+
+		&:last-child {
+			padding-right: $leftStepFromEnd;
+		}
+	}
+
+	&_phones {
+		display: flex;
+		flex-direction: column;
+	}
+}

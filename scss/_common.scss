@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: $htmlFontSize;
+}
+
+body{
+	background-color: $backgroundColor;
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+button {
+	border: none;
+}
+
+h1, section, article{
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	max-width: $maxWidth;
+	margin: 0 auto;
+}
+
+.no-wrap{
+	white-space: nowrap;
+}

@@ -1,0 +1,21 @@
+$backgroundColor: #f2f2f2;
+$maxWidth: 1200px;
+$backgroundTitleColor: #3399FF;
+$leftStepFromEnd: 30px;
+$htmlFontSize: 16px;
+
+@mixin jost($size, $weight, $height, $spacing) {
+	font-family: Jost;
+	font-size: $size;
+	font-weight: $weight;
+	line-height: $height;
+	letter-spacing: $spacing;
+}
+
+@mixin dmSerif($size, $height, $spacing) {
+	font-family: DM Serif Display;
+	font-size: $size;
+	font-weight: 400;
+	line-height: $height;
+	letter-spacing: $spacing;
+}
