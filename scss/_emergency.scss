@@ -5,8 +5,12 @@
 		align-items: center;
 		gap: 10px;
 	}
-	// &__title {
-	// }
+	&__title {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+	}
 	&__subtitle {
 		text-transform: uppercase;
 		font-style: italic;
