@@ -8,14 +8,14 @@
 		text-align: end;
 		display: flex;
 		flex-direction: column;
-		padding-right: $leftStepFromEnd;
+		padding-right: $paddingValue;
 	}
 }
 
 .title {
 	display: grid;
 	grid-template-columns: 2fr 3fr 5fr;
-	background-color: $backgroundTitleColor;
+	background-color: $blueColor;
 	align-items: center;
 	color: #fff;
 
@@ -27,28 +27,30 @@
 	&_subtitle {
 		text-transform: uppercase;
 		font-size: 1.2rem;
+		font-weight: 300;
+		letter-spacing: 0.2rem;
 		text-align: end;
-		padding-right: $leftStepFromEnd;
+		padding-right: $paddingValue;
 	}
 }
 
-.contacts {
-	display: grid;
-	grid-template-columns: 1fr 4fr;
-	padding: 10px 0;
+// .contacts {
+// 	display: grid;
+// 	grid-template-columns: 1fr 4fr;
+// 	padding: 10px 0;
 
-	&_block {
-		display: flex;
-		justify-content: space-between;
-		gap: 10px;
+// 	&_block {
+// 		display: flex;
+// 		justify-content: space-between;
+// 		gap: 10px;
 
-		&:last-child {
-			padding-right: $leftStepFromEnd;
-		}
-	}
+// 		&:last-child {
+// 			padding-right: $paddingValue;
+// 		}
+// 	}
 
-	&_phones {
-		display: flex;
-		flex-direction: column;
-	}
-}
+// 	&_phones {
+// 		display: flex;
+// 		flex-direction: column;
+// 	}
+// }

@@ -14,7 +14,6 @@ html {
 }
 
 body {
-  background-color: #f2f2f2;
   margin: 0;
   padding: 0;
 }
@@ -40,7 +39,7 @@ article {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1170px;
   margin: 0 auto;
 }
 
@@ -126,6 +125,11 @@ article {
   font-style: italic;
 }
 
+@media (max-width: 375px) {
+  html {
+    font-size: 12px;
+  }
+}
 .header_block {
   display: grid;
   grid-template-columns: 2fr 5fr 3fr;
@@ -152,32 +156,16 @@ article {
 .title_subtitle {
   text-transform: uppercase;
   font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
   text-align: end;
   padding-right: 30px;
-}
-
-.contacts {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  padding: 10px 0;
-}
-.contacts_block {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-}
-.contacts_block:last-child {
-  padding-right: 30px;
-}
-.contacts_phones {
-  display: flex;
-  flex-direction: column;
 }
 
 .main {
   display: grid;
   grid-template-columns: 1fr 4fr;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .menu {
@@ -228,10 +216,13 @@ article {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  text-transform: uppercase;
 }
 .emergency__subtitle {
   text-transform: uppercase;
   font-style: italic;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
   font-size: 1.1rem;
 }
 .emergency__text > p {

@@ -1,7 +1,7 @@
 .main {
 	display: grid;
 	grid-template-columns: 1fr 4fr;
-	margin-top: 10px;
+	margin-top: $paddingValue;
 }
 
 .menu {
