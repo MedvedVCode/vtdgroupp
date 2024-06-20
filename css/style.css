@@ -41,6 +41,7 @@ article {
 .container {
   max-width: 1170px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .no-wrap {
@@ -130,12 +131,33 @@ article {
     font-size: 12px;
   }
 }
-.header_block {
+.header__block {
   display: grid;
-  grid-template-columns: 2fr 5fr 3fr;
+  grid-template-columns: 1fr 7fr;
   padding: 10px 0;
+  color: #666666;
 }
-.header_mail {
+.header__time-work {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.header__time-work--color {
+  color: #666666;
+  font-weight: 400;
+  margin-left: 10px;
+}
+.header__contacts {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.header__contacts a {
+  font-weight: 500;
+}
+.header__mail {
   text-align: end;
   display: flex;
   flex-direction: column;
@@ -149,17 +171,47 @@ article {
   align-items: center;
   color: #fff;
 }
-.title_logo {
+.title__logo {
   font-size: 3rem;
   white-space: nowrap;
 }
-.title_subtitle {
+.title__subtitle {
   text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: 300;
   letter-spacing: 0.2rem;
   text-align: end;
   padding-right: 30px;
+}
+
+.blinker__outline--red {
+  stroke: #FF3333;
+}
+.blinker__outline--blue {
+  stroke: #3399FF;
+}
+.blinker__circle {
+  margin-right: 10px;
+  opacity: 0;
+  animation: blink 2s ease-out;
+  animation-iteration-count: infinite;
+}
+.blinker__circle--red {
+  fill: #FF3333;
+}
+.blinker__circle--blue {
+  fill: #3399FF;
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 .main {
@@ -215,7 +267,7 @@ article {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   text-transform: uppercase;
 }
 .emergency__subtitle {
@@ -239,4 +291,15 @@ article {
 }
 .emergency__subject {
   margin-top: 10px;
+}
+
+@media (max-width: 1140px) {
+  .emergency__subtitle, .title__subtitle {
+    letter-spacing: 0.1rem;
+  }
+}
+@media (max-width: 1030px) {
+  .emergency__subtitle, .title__subtitle {
+    letter-spacing: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

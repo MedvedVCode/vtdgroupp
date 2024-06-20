@@ -1,10 +1,34 @@
 .header {
-	&_block {
+	&__block {
 		display: grid;
-		grid-template-columns: 2fr 5fr 3fr;
+		grid-template-columns: 1fr 7fr;
 		padding: 10px 0;
+		color: $grayColor;
 	}
-	&_mail {
+
+	&__time-work {
+		display: flex;
+		gap: 10px;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		&--color {
+			color: $grayColor;
+			font-weight: 400;
+			margin-left: 10px;
+		}
+	}
+
+	&__contacts {
+		display: flex;
+		gap: 10px;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		& a {
+			font-weight: 500;
+		}
+	}
+
+	&__mail {
 		text-align: end;
 		display: flex;
 		flex-direction: column;
@@ -19,12 +43,12 @@
 	align-items: center;
 	color: #fff;
 
-	&_logo {
+	&__logo {
 		font-size: 3rem;
 		white-space: nowrap;
 	}
 
-	&_subtitle {
+	&__subtitle {
 		text-transform: uppercase;
 		font-size: 1.2rem;
 		font-weight: 300;
@@ -33,24 +57,38 @@
 		padding-right: $paddingValue;
 	}
 }
+.blinker {
+	&__outline--red {
+		stroke: $redColor;
+	}
 
-// .contacts {
-// 	display: grid;
-// 	grid-template-columns: 1fr 4fr;
-// 	padding: 10px 0;
+	&__outline--blue {
+		stroke: $blueColor;
+	}
 
-// 	&_block {
-// 		display: flex;
-// 		justify-content: space-between;
-// 		gap: 10px;
+	&__circle {
+		margin-right: 10px;
+		&--red {
+			fill: $redColor;
+		}
 
-// 		&:last-child {
-// 			padding-right: $paddingValue;
-// 		}
-// 	}
+		&--blue {
+			fill: $blueColor;
+		}
 
-// 	&_phones {
-// 		display: flex;
-// 		flex-direction: column;
-// 	}
-// }
+		opacity: 0;
+		animation: blink 2s ease-out;
+		animation-iteration-count: infinite;
+		@keyframes blink {
+			0% {
+				opacity: 0;
+			}
+			50% {
+				opacity: 1;
+			}
+			100% {
+				opacity: 0;
+			}
+		}
+	}
+}

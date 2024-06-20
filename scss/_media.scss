@@ -1,0 +1,15 @@
+@media(max-width: 1140px) {
+	.emergency, .title {
+		&__subtitle {
+			letter-spacing: 0.1rem;
+		}
+	}
+}
+
+@media(max-width: 1030px) {
+	.emergency, .title {
+		&__subtitle {
+			letter-spacing: 0;
+		}
+	}
+}

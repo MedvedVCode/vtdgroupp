@@ -11,13 +11,14 @@
 			rel="stylesheet"
 			href="./css/style.css"
 		/>
+		<script src="./script/working.js" defer></script>
 	</head>
 	<body>
 		<header class="header container">
-			<div class="header_block">
+			<div class="header__block">
 				<div></div>
-				<div class="header_time-work">
-					<p>
+				<div class="header__time-work">
+					<div>
 						<svg
 							width="16"
 							height="16"
@@ -26,6 +27,8 @@
 							xmlns="http://www.w3.org/2000/svg"
 						>
 							<circle
+								class="blinker__outline--blue"
+								id="blinker-outline"
 								cx="8"
 								cy="8"
 								r="7.5"
@@ -33,37 +36,65 @@
 								stroke="#FF3333"
 							/>
 							<circle
-								style="fill: blue"
+								class="blinker__circle blinker__circle--blue"
+								id="blinker-circle"
 								cx="8"
 								cy="8"
 								r="5"
 								fill="#FF3333"
 							/>
 						</svg>
-						Часы работы:
-						<span class="no-wrap">пн-чт с 8.30 до 15.30,</span>
-						<span class="no-wrap">пт с 10 до 15.30,</span>
-						<span class="no-wrap">суб-вс ВЫХОДНОЙ</span>
-					</p>
-					<p>Технический перерыв с 12.00 до 12.30</p>
-				</div>
-				<div class="header_mail">
-					<a
-						class="no-wrap"
-						href="mailto:vptdm@mail.ru"
-						>vptdm@mail.ru</a
+						<a
+							href="./contacts_old.html"
+							id="vtd-works"
+							class="header__time-work--color"
+							>ВТД Групп работает, звоните:</a
+						>
+					</div>
+					<div
+						id="vtd-contacts"
+						class="header__contacts"
 					>
-					<a
-						class="no-wrap"
-						href="mailto:vptdm@yandex.ru"
-						>vptdm@yandex.ru</a
-					>
+						<!-- <div>
+							<span>медицинская одежда:</span>
+							<a
+								href="tel:+74992645192"
+								class="no-wrap"
+								>+7 (499) 264 5192,
+							</a>
+							<a
+								href="tel:+74992644876"
+								class="no-wrap"
+								>+7 (499) 264 4876</a
+							>
+						</div>
+						<div>
+							<span>каркасы:</span>
+							<a
+								href="tel:+79161473650"
+								class="no-wrap"
+								>+7 (916) 147 3650</a
+							>
+						</div> -->
+					</div>
+					<!-- <div id="vtd-contacts" class="header__contacts">
+						<a
+								href="mailto:vptdm@mail.ru"
+								class="no-wrap"
+								>vptdm@mail.ru,
+							</a>
+							<a
+								href="mailto:vptdm@yandex.ru"
+								class="no-wrap"
+								>vptdm@yandex.ru</a
+							>
+					</div> -->
 				</div>
 			</div>
 			<div class="title">
 				<div></div>
-				<h1 class="title_logo no-wrap logo">ВТД Групп</h1>
-				<p class="title_subtitle">ассоциация медицинских предприятий</p>
+				<h1 class="title__logo no-wrap logo">ВТД Групп</h1>
+				<p class="title__subtitle">ассоциация медицинских предприятий</p>
 			</div>
 		</header>
 		<main class="container main">
