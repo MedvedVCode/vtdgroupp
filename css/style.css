@@ -266,11 +266,14 @@ article {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  cursor: pointer;
+}
+.emergency__open {
   overflow: hidden;
   position: relative;
   height: 150px;
 }
-.emergency__desc:after {
+.emergency__open:after {
   content: "";
   position: absolute;
   left: 0;
