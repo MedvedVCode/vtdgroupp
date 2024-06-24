@@ -11,53 +11,54 @@
 			rel="stylesheet"
 			href="./css/style.css"
 		/>
-		<script
-			scr="./script/toggleText.js"
-			defer
-		></script>
+
 		<script
 			src="./script/working.js"
 			defer
 		></script>
+		<script
+			src="./script/toggleText.js"
+			defer
+		></script>
 	</head>
 	<body>
-		<header class="header container">
-			<div class="header__block">
-				<div></div>
-				<div class="header__time-work">
-					<div>
-						<svg
-							width="16"
-							height="16"
-							viewBox="0 0 16 16"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<circle
-								class="blinker__outline--blue"
-								id="blinker-outline"
-								cx="8"
-								cy="8"
-								r="7.5"
-								fill="white"
-								stroke="#FF3333"
-							/>
-							<circle
-								class="blinker__circle blinker__circle--blue"
-								id="blinker-circle"
-								cx="8"
-								cy="8"
-								r="5"
-								fill="#FF3333"
-							/>
-						</svg>
-						<a
-							href="./contacts_old.html"
-							id="vtd-works"
-							class="header__time-work--color"
-						></a>
-					</div>
-					<div>
+		<header>
+			<section class="container">
+				<div class="header__block">
+					<div></div>
+					<div class="header__time-work">
+						<div>
+							<svg
+								width="16"
+								height="16"
+								viewBox="0 0 16 16"
+								fill="none"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<circle
+									class="blinker__outline--blue"
+									id="blinker-outline"
+									cx="8"
+									cy="8"
+									r="7.5"
+									fill="white"
+									stroke="#FF3333"
+								/>
+								<circle
+									class="blinker__circle blinker__circle--blue"
+									id="blinker-circle"
+									cx="8"
+									cy="8"
+									r="5"
+									fill="#FF3333"
+								/>
+							</svg>
+							<a
+								href="./contacts_old.html"
+								id="vtd-works"
+								class="header__time-work--color"
+							></a>
+						</div>
 						<div class="header__contacts">
 							<div class="vtd-tel no-visible">
 								<span>медицинская одежда:</span>
@@ -81,10 +82,7 @@
 								>
 							</div>
 						</div>
-						<div
-							id=""
-							class="header__contacts"
-						>
+						<div class="header__contacts">
 							<a
 								href="mailto:vptdm@mail.ru"
 								class="no-wrap vtd-mail no-visible"
@@ -98,12 +96,16 @@
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="title">
-				<div></div>
-				<h1 class="title__logo no-wrap logo">ВТД Групп</h1>
-				<p class="title__subtitle">ассоциация медицинских предприятий</p>
-			</div>
+			</section>
+			<section class="title">
+				<div class="container">
+					<div class="title__block">
+						<div></div>
+						<h1 class="title__logo no-wrap logo">ВТД Групп</h1>
+						<p class="title__subtitle">ассоциация медицинских предприятий</p>
+					</div>
+				</div>
+			</section>
 		</header>
 		<main class="container main">
 			<nav class="menu">

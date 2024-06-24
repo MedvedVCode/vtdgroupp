@@ -50,12 +50,6 @@ article {
 	display: none;
 }
 
-.logo {
-	font-family: 'Tiny5', sans-serif;
-	font-weight: 400;
-	font-style: normal;
-}
-
 .roboto-thin {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 100;
@@ -128,8 +122,4 @@ article {
 	font-style: italic;
 }
 
-@media (max-width: 375px) {
-	html {
-		font-size: calc(1.2 * $htmlFontSize);
-	}
-}
+

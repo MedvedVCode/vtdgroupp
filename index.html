@@ -15,7 +15,10 @@
 			src="./script/working.js"
 			defer
 		></script>
-		<script src="./script/closeText.js" defer></script>
+		<script
+			src="./script/toggleText.js"
+			defer
+		></script>
 	</head>
 	<body>
 		<header class="header container">
@@ -54,10 +57,8 @@
 							class="header__time-work--color"
 						></a>
 					</div>
-					<div >
-						<div
-							class="header__contacts "
-						>
+					<div>
+						<div class="header__contacts">
 							<div class="vtd-tel no-visible">
 								<span>медицинская одежда:</span>
 								<a
@@ -80,10 +81,7 @@
 								>
 							</div>
 						</div>
-						<div
-							id=""
-							class="header__contacts "
-						>
+						<div class="header__contacts">
 							<a
 								href="mailto:vptdm@mail.ru"
 								class="no-wrap vtd-mail no-visible"
@@ -92,8 +90,9 @@
 							<a
 								href="mailto:vptdm@yandex.ru"
 								class="no-wrap vtd-mail no-visible"
-								>vptdm@yandex.ru</a
 							>
+								vptdm@yandex.ru
+							</a>
 						</div>
 					</div>
 				</div>
@@ -231,12 +230,15 @@
 				</ul>
 			</nav>
 			<section class="content">
-				<div class="emergency__desc">
+				<div
+					class="emergency__desc emergency__open"
+					id="text"
+				>
 					<div class="emergency__title">
 						<h2 class="roboto-medium">одежда скорой помощи</h2>
 						<p class="emergency__subtitle">сезонная для выездных бригад</p>
 					</div>
-					<div class="emergency__text" id="text">
+					<div class="emergency__text">
 						<p>
 							Наш коллектив совместно со «Станцией скорой и неотложной
 							медицинской помощи им. А.С. Пучкова Департамента здравоохранения

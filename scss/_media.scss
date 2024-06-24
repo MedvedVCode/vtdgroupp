@@ -13,3 +13,9 @@
 		}
 	}
 }
+
+@media (max-width: 375px) {
+	html {
+		font-size: calc(1.2 * $htmlFontSize);
+	}
+}

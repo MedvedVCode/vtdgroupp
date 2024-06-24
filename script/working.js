@@ -29,6 +29,7 @@ function setBlinker(color) {
 }
 
 function setText(text) {
+	console.log(text);
 	switch (text) {
 		case 'weekend':
 			vtdWorksLinkEl.textContent = `ВТД: выходные, пишите:`;
@@ -62,7 +63,7 @@ function setContacts(contact) {
 		setContacts('email');
 	} else {
 		let workingBegin = 0;
-
+		
 		if (moscowNowTime.getDay() == 5) {
 			workingBegin = getWorkingTimeFromNowDay(
 				moscowNowTime.getDate(),
@@ -87,7 +88,8 @@ function setContacts(contact) {
 			moscowNowTime.getDate(),
 			[12, 30, 0]
 		); // 12:30
-		console.log(moscowNowTime, workingBegin, workingEnd, breakBegin, breakEnd);
+
+		console.log(moscowNowTime);
 		const now = moscowNowTime.getTime();
 		if (
 			(now > workingBegin && now < breakBegin) ||
@@ -99,15 +101,10 @@ function setContacts(contact) {
 		} else if (now > breakBegin && now < breakEnd) {
 			setText('break');
 			setBlinker('red');
+			setContacts('email');
 		} else {
 			setText('close');
 			setBlinker('red');
+			setContacts('email');
 		}
 	}
-
-// addEventListener('unload', () => {
-// 	clearInterval(idInterval)
-// })
-// addEventListener('beforeunload', () => {
-// 	clearInterval(idInterval)
-// })

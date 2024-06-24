@@ -52,12 +52,6 @@ article {
   display: none;
 }
 
-.logo {
-  font-family: "Tiny5", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 .roboto-thin {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
@@ -130,11 +124,6 @@ article {
   font-style: italic;
 }
 
-@media (max-width: 375px) {
-  html {
-    font-size: 12px;
-  }
-}
 .header__block {
   display: grid;
   grid-template-columns: 1fr 7fr;
@@ -169,23 +158,29 @@ article {
 }
 
 .title {
+  color: #3399FF;
+  width: 100%;
+  border-bottom: 2px solid #3399FF;
+  border-top: 2px solid #3399FF;
+}
+.title__block {
   display: grid;
-  grid-template-columns: 2fr 3fr 5fr;
-  background-color: #3399FF;
+  grid-template-columns: 1fr 3fr 4fr;
   align-items: center;
-  color: #fff;
 }
 .title__logo {
-  font-size: 3rem;
+  font-size: 2.5rem;
   white-space: nowrap;
+  font-family: "Tiny5", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 .title__subtitle {
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 300;
   letter-spacing: 0.2rem;
   text-align: end;
-  padding-right: 30px;
 }
 
 .blinker__outline--red {
@@ -265,7 +260,6 @@ article {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
   cursor: pointer;
 }
 .emergency__open {
@@ -321,5 +315,10 @@ article {
 @media (max-width: 1030px) {
   .emergency__subtitle, .title__subtitle {
     letter-spacing: 0;
+  }
+}
+@media (max-width: 375px) {
+  html {
+    font-size: 12px;
   }
 }/*# sourceMappingURL=style.css.map */
