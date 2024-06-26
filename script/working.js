@@ -6,8 +6,8 @@ const MOSCOW_TIME_ZONE = -180; //в минутах от UTC
 const vtdWorksLinkEl = document.querySelector('#vtd-works');
 const blinkerOutlineEl = document.querySelector('#blinker-outline');
 const blinkerCircleEl = document.querySelector('#blinker-circle');
-const vtdTelEl = document.querySelectorAll('.vtd-tel');
-const vtdMailEl = document.querySelectorAll('.vtd-mail');
+const vtdTelEl = document.querySelector('#vtd-tel');
+const vtdMailEl = document.querySelector('#vtd-mail');
 
 function getMoscowNowTime(currentNow) {
 	localTimeZone = currentNow.getTimezoneOffset();
@@ -38,7 +38,7 @@ function setText(text) {
 			vtdWorksLinkEl.textContent = 'ВТД: работает, звоните:';
 			break;
 		case 'break':
-			vtdWorksLinkEl.textContent = `ВТД:Перерыв, пишите: `;
+			vtdWorksLinkEl.textContent = `ВТД: перерыв, пишите: `;
 			break;
 		case 'close':
 			vtdWorksLinkEl.textContent = `ВТД: закрыто до утра, пишите: `;
@@ -48,13 +48,15 @@ function setText(text) {
 
 function setContacts(contact) {
 	if (contact == 'email') {
-		vtdTelEl.forEach((el) => el.classList.add('no-visible'));
-		vtdMailEl.forEach((el) => el.classList.remove('no-visible'));
+		vtdTelEl.style.display = 'none';
+		vtdMailEl.removeAttribute('style');
 	} else if (contact == 'tel') {
-		vtdTelEl.forEach((el) => el.classList.remove('no-visible'));
-		vtdMailEl.forEach((el) => el.classList.add('no-visible'));
+		vtdTelEl.removeAttribute('style');
+		vtdMailEl.style.display = 'none';
 	}
 }
+
+function bodyFunc() {
 	const moscowNowTime = getMoscowNowTime(new Date());
 
 	if (moscowNowTime.getDay() == 0 || moscowNowTime.getDay() == 6) {
@@ -63,7 +65,7 @@ function setContacts(contact) {
 		setContacts('email');
 	} else {
 		let workingBegin = 0;
-		
+
 		if (moscowNowTime.getDay() == 5) {
 			workingBegin = getWorkingTimeFromNowDay(
 				moscowNowTime.getDate(),
@@ -108,3 +110,9 @@ function setContacts(contact) {
 			setContacts('email');
 		}
 	}
+}
+
+bodyFunc();
+const intervalId = setInterval(bodyFunc, MINUTE);
+window.addEventListener('beforeunload', clearInterval(intervalId));
+

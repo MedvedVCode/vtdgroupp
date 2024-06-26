@@ -14,8 +14,14 @@
 	}
 }
 
-@media (max-width: 375px) {
+@media (max-width: 480px) {
 	html {
 		font-size: calc(1.2 * $htmlFontSize);
+	}
+}
+
+@media (max-width: 435px) {
+	html {
+		font-size:$htmlFontSize;
 	}
 }

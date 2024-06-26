@@ -27,7 +27,7 @@
 				<div class="header__block">
 					<div></div>
 					<div class="header__time-work">
-						<div>
+						<div class="header__time-work--blinker">
 							<svg
 								width="16"
 								height="16"
@@ -59,8 +59,12 @@
 								class="header__time-work--color"
 							></a>
 						</div>
-						<div class="header__contacts">
-							<div class="vtd-tel no-visible">
+						<div
+							class="header__contacts"
+							style="display: none"
+							id="vtd-tel"
+						>
+							<div class="vtd-tel">
 								<span>медицинская одежда:</span>
 								<a
 									href="tel:+74992645192"
@@ -73,7 +77,7 @@
 									>+7 (499) 264 4876</a
 								>
 							</div>
-							<div class="vtd-tel no-visible">
+							<div class="vtd-tel">
 								<span>каркасы:</span>
 								<a
 									href="tel:+79161473650"
@@ -82,15 +86,19 @@
 								>
 							</div>
 						</div>
-						<div class="header__contacts">
+						<div
+							class="header__contacts"
+							style="display: none"
+							id="vtd-mail"
+						>
 							<a
 								href="mailto:vptdm@mail.ru"
-								class="no-wrap vtd-mail no-visible"
+								class="no-wrap vtd-mail"
 								>vptdm@mail.ru,
 							</a>
 							<a
 								href="mailto:vptdm@yandex.ru"
-								class="no-wrap vtd-mail no-visible"
+								class="no-wrap vtd-mail"
 								>vptdm@yandex.ru</a
 							>
 						</div>
@@ -108,9 +116,9 @@
 			</section>
 		</header>
 		<main class="container main">
-			<nav class="menu">
+			<aside class="menu">
 				<p>Мы разрабатываем, изготавливаем и продаем, оптом и в розницу:</p>
-				<ul class="menu__list">
+				<nav class="menu__list">
 					<li>
 						<p>Одежда скорой помощи сезонная</p>
 						<p class="no-wrap">+7 (499) 264 5192</p>
@@ -231,18 +239,18 @@
 						</a>
 					</li>
 					<li><a href="contacts.html">Схема проезда и контакты</a></li>
-				</ul>
-			</nav>
+				</nav>
+			</aside>
 			<section class="content">
 				<div
-					class="emergency__desc emergency__open"
+					class="body__desc body__open border"
 					id="text"
 				>
-					<div class="emergency__title">
-						<h2 class="roboto-medium">одежда скорой помощи</h2>
-						<p class="emergency__subtitle">сезонная для выездных бригад</p>
+					<div class="body__title">
+						<h2>одежда скорой помощи</h2>
+						<p class="body__subtitle">сезонная для выездных бригад</p>
 					</div>
-					<div class="emergency__text">
+					<div class="body__text">
 						<p>
 							Наш коллектив совместно со «Станцией скорой и неотложной
 							медицинской помощи им. А.С. Пучкова Департамента здравоохранения
@@ -297,18 +305,56 @@
 						</p>
 					</div>
 				</div>
-				<div class="emergency__subject">
-					<article class="emergency__card">
-						<h3>Title</h3>
-						<p>Desc</p>
-						<img
-							src=""
-							alt=""
-						/>
-						<img
-							src=""
-							alt=""
-						/>
+				<div class="body__subject">
+					<article class="body__card border">
+						<div class="body__card-text">
+							<a
+								name="01"
+								class="body__card-title"
+								>Жилет легкий
+							</a>
+							<p class="body__card-desc">
+								Ткань верха Satori, 120 г/квм, 60% хб, 40% пэ Подкладка – бязь,
+								100% хб
+							</p>
+						</div>
+						<div class="body__card-imgs">
+							<img
+								class="body__card-img"
+								src="./pic/emergency/IMG_0069_.jpg"
+								alt=""
+							/>
+							<img
+								class="body__card-img"
+								src="./pic/emergency/IMG_0099_.jpg"
+								alt=""
+							/>
+						</div>
+					</article>
+					<article class="body__card border">
+						<div class="body__card-text">
+							<a
+								name="01"
+								class="body__card-title"
+								>Жилет легкий
+							</a>
+							<p class="body__card-desc">
+								Ткань верха Satori, 120 г/квм, 60% хб, 40% пэ Подкладка – бязь,
+								100% хб
+							</p>
+						</div>
+						<div class="body__card-imgs">
+							<img
+								class="body__card-img"
+								src="./pic/emergency/IMG_0069_.jpg"
+								alt=""
+							/>
+							<img
+								class="body__card-img"
+								src="./pic/emergency/IMG_0099_.jpg"
+								alt=""
+							/>
+						</div>
 					</article>
 				</div>
 			</section>

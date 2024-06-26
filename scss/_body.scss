@@ -1,4 +1,4 @@
-.emergency {
+.body {
 	&__desc {
 		display: flex;
 		flex-direction: column;
@@ -30,6 +30,9 @@
 		align-items: center;
 		gap: 5px;
 		text-transform: uppercase;
+		&--header {
+			font-weight: 500;
+		}
 	}
 	&__subtitle {
 		text-transform: uppercase;
@@ -55,5 +58,43 @@
 	}
 	&__subject {
 		margin-top: 10px;
+		counter-reset: articleItem 0;
+		display: flex;
+		gap: 10px;
+		flex-wrap: wrap;
+	}
+	&__card {
+		display: flex;
+		justify-content: space-between;
+		gap: 15px;
+		flex-wrap: wrap;
+		&-text {
+			flex-basis: 200px;
+			flex-grow: 2;
+		}
+		&-title {
+			margin-bottom: 15px;
+			font-weight: 500;
+			text-transform: uppercase;
+			&:before {
+				display: inline-block;
+				height: 30px;
+				width: 30px;
+				color: $blueColor;
+				text-align: center;
+				counter-increment: articleItem;
+				content: counter(articleItem) '.';
+				font-size: 1.3rem;
+			}
+		}
+		&-imgs {
+			display: flex;
+			align-items: start;
+			flex-wrap: wrap;
+			gap: 15px;
+		}
+		&-img {
+			border-radius: 20px;
+		}
 	}
 }

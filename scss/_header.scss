@@ -10,11 +10,16 @@
 		display: flex;
 		gap: 10px;
 		justify-content: space-between;
+		align-items: center;
 		flex-wrap: wrap;
 		&--color {
 			color: $grayColor;
 			font-weight: 400;
 			margin-left: 10px;
+		}
+		&--blinker{
+			display: flex;
+			align-items: center;
 		}
 	}
 
@@ -41,6 +46,7 @@
 	width: 100%;
 	border-bottom: 2px solid $blueColor;
 	border-top: 2px solid $blueColor;
+	margin-top: 10px;
 
 	&__block {
 		display: grid;
