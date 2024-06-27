@@ -250,6 +250,7 @@ article {
   justify-content: space-between;
   gap: 15px;
   flex-wrap: wrap;
+  width: 100%;
 }
 .body__card-text {
   flex-basis: 200px;
@@ -278,6 +279,17 @@ article {
 }
 .body__card-img {
   border-radius: 20px;
+}
+
+.footer {
+  margin-top: 30px;
+}
+.footer__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 @media (max-width: 1140px) {
