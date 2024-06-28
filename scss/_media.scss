@@ -14,6 +14,21 @@
 	}
 }
 
+@media (max-width: 980px) {
+	html {
+		font-size: calc(1.4 * $htmlFontSize);
+	}
+}
+
+@media (max-width: 780px) {
+	html {
+		font-size: calc(1.3 * $htmlFontSize);
+	}
+	.button__top {
+		left: 9%;
+	}
+}
+
 @media (max-width: 480px) {
 	html {
 		font-size: calc(1.2 * $htmlFontSize);
@@ -23,5 +38,8 @@
 @media (max-width: 435px) {
 	html {
 		font-size:$htmlFontSize;
+	}
+	.button__top {
+		left: 10%;
 	}
 }

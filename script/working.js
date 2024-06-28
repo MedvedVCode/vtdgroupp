@@ -32,16 +32,16 @@ function setText(text) {
 	console.log(text);
 	switch (text) {
 		case 'weekend':
-			vtdWorksLinkEl.textContent = `ВТД: выходные, пишите:`;
+			vtdWorksLinkEl.textContent = `ВТД: выходные, см. график работы:`;
 			break;
 		case 'open':
 			vtdWorksLinkEl.textContent = 'ВТД: работает, звоните:';
 			break;
 		case 'break':
-			vtdWorksLinkEl.textContent = `ВТД: перерыв, пишите: `;
+			vtdWorksLinkEl.textContent = `ВТД: перерыв, см. график работы:`;
 			break;
 		case 'close':
-			vtdWorksLinkEl.textContent = `ВТД: закрыто до утра, пишите: `;
+			vtdWorksLinkEl.textContent = `ВТД: закрыто до утра, см. график работы:`;
 			break;
 	}
 }
