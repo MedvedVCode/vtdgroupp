@@ -16,7 +16,8 @@ body {
 	padding: 0;
 }
 
-ul, nav {
+ul,
+nav {
 	list-style: none;
 }
 
@@ -46,14 +47,31 @@ article {
 	white-space: nowrap;
 }
 
-.no-visible{
+.no-visible {
 	display: none;
 }
 
-.border{
+.border {
 	background-color: #fff;
 	padding: 20px;
 	border-radius: 20px;
 	border: 1px solid #666;
 }
 
+.button {
+	&__top {
+		position: fixed; 
+		left: 10%; 
+		bottom: 10%; 
+		cursor: pointer; 
+		display: none; 
+		font-size: 3rem;
+		border-radius: 10px;
+		color: white;
+		background-color: rgba($blueColor, 0.3);
+		padding: 0 10px 10px;
+		&--show {
+			display: block;
+		}
+	}
+}
