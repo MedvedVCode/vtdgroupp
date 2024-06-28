@@ -2,6 +2,9 @@
 	display: grid;
 	grid-template-columns: 1fr 4fr;
 	margin-top: $paddingValue;
+	&--column{
+		
+	}
 }
 
 .menu {
@@ -14,6 +17,7 @@
 		margin-top: 20px;
 		padding: 0 5px;
 		text-align: start;
+		&--row{}
 	}
 	&__sublist {
 		margin-top: 20px;
